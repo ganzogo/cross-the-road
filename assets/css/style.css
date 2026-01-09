@@ -26,13 +26,25 @@ hr {
 
 /* Print rules */
 @media print {
-  .content {
+  @page {
+    margin: 1in;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  main.content {
     max-width: none;
-    padding: 1in;
+    padding: 0;
   }
 
   section {
     break-inside: avoid;
     page-break-inside: avoid;
+  }
+
+  h2 {
+    break-after: avoid;
   }
 }
