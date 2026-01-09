@@ -2,7 +2,7 @@
 
 ## Step 1: Remix the Starter Pack
 
-Follow the link: bit.ly/cross-the-road.
+Follow the link: [bit.ly/cross-the-road](https://bit.ly/cross-the-road).
 
 Next tap **Remix**. When the project loads, give it a new name. Have a look around the project.
 
