@@ -6,7 +6,7 @@ layout: default
 
 These steps are available at [bit.ly/cross-the-road-steps](https://bit.ly/cross-the-road-steps).
 
-<section>
+<section markdown="1">
 
 ## Step 1: Remix the Starter Pack
 
@@ -23,7 +23,7 @@ Next tap **Remix**. When the project loads, give it a new name. Have a look arou
 ---
 
 </section>
-<section>
+<section markdown="1">
 
 ## Step 2: Position the player at the bottom of the screen
 
@@ -36,7 +36,7 @@ When the game starts, we want to position the player at the bottom of the screen
 ---
 
 </section>
-<section>
+<section markdown="1">
 
 ## Step 3: Make the player walk to the right
 
@@ -49,7 +49,7 @@ Add a forever loop and inside check to see if the right arrow is being pressed. 
 ---
 
 </section>
-<section>
+<section markdown="1">
 
 ## Step 4: Make the player walk in the other directions
 
@@ -60,7 +60,7 @@ Now the player can walk right. Next let’s make them walk left, up and down.
 ---
 
 </section>
-<section>
+<section markdown="1">
 
 ## Step 5: Add a car
 
@@ -76,7 +76,7 @@ To do that, hide the sprite, then clone it and then when the clone is created, p
 ---
 
 </section>
-<section>
+<section markdown="1">
 
 ## Step 6: Make the car move
 
@@ -93,7 +93,7 @@ Next we will make the car move from left to right across the screen. We will use
 ---
 
 </section>
-<section>
+<section markdown="1">
 
 ## Step 7: Add more cars
 
@@ -106,7 +106,7 @@ Instead of just creating one clone, add a forever loop and create a clone every 
 ---
 
 </section>
-<section>
+<section markdown="1">
 
 ## Step 8: Make the car squash the player
 
@@ -129,7 +129,7 @@ And in the player sprite, when you receive the message, switch the costume and s
 ---
 
 </section>
-<section>
+<section markdown="1">
 
 ## Step 9: Add some coins
 
@@ -142,7 +142,7 @@ Go to the coin sprite and add this code to create 10 clones at random positions.
 ---
 
 </section>
-<section>
+<section markdown="1">
 
 ## Step 10: Let the player collect the coins
 
@@ -154,7 +154,7 @@ Go to the coin sprite and add this code to create 10 clones at random positions.
 ---
 
 </section>
-<section>
+<section markdown="1">
 
 ## Step 11: Finish the game when the player reaches the top of the screen
 
@@ -172,7 +172,7 @@ And add this inside the you-win sprite.
 ---
 
 </section>
-<section>
+<section markdown="1">
 
 ## Challenges
 
