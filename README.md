@@ -1,8 +1,10 @@
 # Cross The Road
 
+These steps are available at [bit.ly/cross-the-road-steps](https://bit.ly/cross-the-road-steps).
+
 ## Step 1: Remix the Starter Pack
 
-Follow the link: [bit.ly/cross-the-road](https://bit.ly/cross-the-road).
+Follow the link: [bit.ly/cross-the-road-starter](https://bit.ly/cross-the-road).
 
 Next tap **Remix**. When the project loads, give it a new name. Have a look around the project.
 
@@ -16,7 +18,7 @@ Next tap **Remix**. When the project loads, give it a new name. Have a look arou
 
 ## Step 2: Position the player at the bottom of the screen
 
-When the game starts, we want to position the player at the bottom of the screen, in the middle. 
+When the game starts, we want to position the player at the bottom of the screen, in the middle. Add this code to the player sprite.
 
 ![Step 2 - player sprite](img/step-02-01.png)
 
@@ -26,7 +28,7 @@ When the game starts, we want to position the player at the bottom of the screen
 
 ## Step 3: Make the player walk to the right
 
-Create a forever loop and inside check to see if the right arrow is being pressed. If it is, move the player to the right. 
+Add a forever loop and inside check to see if the right arrow is being pressed. If it is, move the player to the right. 
 
 ![Step 3 - player sprite](img/step-03-01.png)
 
@@ -46,7 +48,7 @@ Now the player can walk right. Next let’s make them walk left, up and down.
 
 Instead of using the car sprite directly, we will clone it. That will let us have more than one car on the screen at the same time.
 
-To do that, hide the sprite, then clone it and then when the clone is created, position it and show it. We’re going to put it on the left of the screen.
+To do that, hide the sprite, then clone it and then when the clone is created, position it and show it. We’re going to put it on the left of the screen. Add this code to the car sprite.
 
 ![Step 5 - car sprite](img/step-05-01.png)
 
