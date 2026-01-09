@@ -182,3 +182,5 @@ And add this inside the you-win sprite.
 * *Can you add a screen to choose your character?*
 * *Can you use the train sprite? How can you draw a train track?*
 * *Can you use the log sprite?*
+
+</section>
