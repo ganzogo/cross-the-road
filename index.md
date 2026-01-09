@@ -8,6 +8,8 @@ These steps are available at [bit.ly/cross-the-road-steps](https://bit.ly/cross-
 
 <section markdown="1">
 
+---
+
 ## Step 1: Remix the Starter Pack
 
 Follow the link: [bit.ly/cross-the-road-starter](https://bit.ly/cross-the-road).
