@@ -1,0 +1,12 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Print rules */
+@media print {
+  section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
