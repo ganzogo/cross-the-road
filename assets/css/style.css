@@ -26,6 +26,15 @@ hr {
 
 /* Print rules */
 @media print {
+  @page {
+    padding-top: 0.5in;
+    padding-bottom: 0.5in;
+  }
+
+  @page:first {
+    padding-top: 0;
+  }
+
   .content {
     max-width: none;
     padding: 1in;
