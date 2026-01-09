@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Cross The Road
 
 These steps are available at [bit.ly/cross-the-road-steps](https://bit.ly/cross-the-road-steps).
