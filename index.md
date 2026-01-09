@@ -10,7 +10,7 @@ These steps are available at [bit.ly/cross-the-road-steps](https://bit.ly/cross-
 
 ---
 
-## Step 1: Remix the Starter Pack
+## 🔄 Step 1: Remix the Starter Pack
 
 Follow the link: [bit.ly/cross-the-road-starter](https://bit.ly/cross-the-road).
 
@@ -27,7 +27,7 @@ Next tap **Remix**. When the project loads, give it a new name. Have a look arou
 </section>
 <section markdown="1">
 
-## Step 2: Position the player at the bottom of the screen
+## 🐔 Step 2: Position the player at the bottom of the screen
 
 When the game starts, we want to position the player at the bottom of the screen, in the middle. Add this code to the player sprite.
 
@@ -40,7 +40,7 @@ When the game starts, we want to position the player at the bottom of the screen
 </section>
 <section markdown="1">
 
-## Step 3: Make the player walk to the right
+## 🚶‍➡️ Step 3: Make the player walk to the right
 
 Add a forever loop and inside check to see if the right arrow is being pressed. If it is, move the player to the right. 
 
@@ -53,7 +53,7 @@ Add a forever loop and inside check to see if the right arrow is being pressed. 
 </section>
 <section markdown="1">
 
-## Step 4: Make the player walk in the other directions
+## ⬅️ ⬆️ ⬇️ Step 4: Make the player walk in the other directions
 
 Now the player can walk right. Next let’s make them walk left, up and down. 
 
@@ -64,7 +64,7 @@ Now the player can walk right. Next let’s make them walk left, up and down.
 </section>
 <section markdown="1">
 
-## Step 5: Add a car
+## 🚗 Step 5: Add a car
 
 Instead of using the car sprite directly, we will clone it. That will let us have more than one car on the screen at the same time.
 
@@ -80,7 +80,7 @@ To do that, hide the sprite, then clone it and then when the clone is created, p
 </section>
 <section markdown="1">
 
-## Step 6: Make the car move
+## 🚙 Step 6: Make the car move
 
 Next we will make the car move from left to right across the screen. We will use repeat until for this. Once it gets across the screen, we can hide the clone.
 
@@ -97,7 +97,7 @@ Next we will make the car move from left to right across the screen. We will use
 </section>
 <section markdown="1">
 
-## Step 7: Add more cars
+## 🚗 🚙 🚌 Step 7: Add more cars
 
 Instead of just creating one clone, add a forever loop and create a clone every 2 seconds.
 
@@ -110,7 +110,7 @@ Instead of just creating one clone, add a forever loop and create a clone every 
 </section>
 <section markdown="1">
 
-## Step 8: Make the car squash the player
+## ❗️ Step 8: Make the car squash the player
 
 Right now, the cars will just keep driving even if the player is in the way. When the car touches the player, broadcast the message “game over”.
 
@@ -133,7 +133,7 @@ And in the player sprite, when you receive the message, switch the costume and s
 </section>
 <section markdown="1">
 
-## Step 9: Add some coins
+## 💰 Step 9: Add some coins
 
 Go to the coin sprite and add this code to create 10 clones at random positions.
 
@@ -146,7 +146,7 @@ Go to the coin sprite and add this code to create 10 clones at random positions.
 </section>
 <section markdown="1">
 
-## Step 10: Let the player collect the coins
+## 🤑 Step 10: Let the player collect the coins
 
 ![Step 10 - coin sprite](assets/img/step-10-01.png)
 
@@ -158,7 +158,7 @@ Go to the coin sprite and add this code to create 10 clones at random positions.
 </section>
 <section markdown="1">
 
-## Step 11: Finish the game when the player reaches the top of the screen
+## 🎉 Step 11: Finish the game when the player reaches the top of the screen
 
 Add this code to the forever loop in the player sprite.
 
@@ -176,7 +176,7 @@ And add this inside the you-win sprite.
 </section>
 <section markdown="1">
 
-## Challenges
+## 🤔 Challenges
 
 * *Can you draw more sprites and use them in your game?*
 * *Can you add more levels?*
