@@ -10,6 +10,14 @@ These steps are available at [bit.ly/cross-the-road-steps](https://bit.ly/cross-
 
 ---
 
+```scratch
+when green flag clicked
+forever
+    move (10) steps
+    turn cw (15) degrees
+end
+```
+
 ## 🔄 Step 1: Remix the Starter Pack
 
 Follow the link: [bit.ly/cross-the-road-starter](https://bit.ly/cross-the-road).

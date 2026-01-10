@@ -23,5 +23,14 @@
   <main class="content">
     {{ content }}
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      scratchblocks.renderMatching(
+        'pre > code.language-scratch',
+        { style: 'scratch3' }
+      );
+    });
+  </script>
 </body>
 </html>
