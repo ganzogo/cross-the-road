@@ -10,14 +10,6 @@ These steps are available at [bit.ly/cross-the-road-steps](https://bit.ly/cross-
 
 ---
 
-```scratch
-when green flag clicked
-forever
-    move (10) steps
-    turn cw (15) degrees
-end
-```
-
 ## 🔄 Step 1: Remix the Starter Pack
 
 Follow the link: [bit.ly/cross-the-road-starter](https://bit.ly/cross-the-road).
@@ -42,7 +34,10 @@ Next tap **Remix**. When the project loads, give it a new name. Have a look arou
 
 When the game starts, we want to position the player at the bottom of the screen, in the middle. Add this code to the player sprite.
 
-![Step 2 - player sprite](assets/img/step-02-01.png)
+```scratch
+when green flag clicked
+go to x: [0] y: [-160]
+```
 
 </section>
 <section markdown="1">
@@ -58,7 +53,15 @@ When the game starts, we want to position the player at the bottom of the screen
 
 Add a forever loop and inside check to see if the right arrow is being pressed. If it is, move the player to the right. 
 
-![Step 3 - player sprite](assets/img/step-03-01.png)
+```scratch
+when green flag clicked
+go to x: [0] y: [-160]
+forever
+    if <key (right arrow v) pressed?> then
+        change x by [5]
+    end
+end
+```
 
 </section>
 <section markdown="1">
@@ -90,7 +93,15 @@ Instead of using the car sprite directly, we will clone it. That will let us hav
 
 To do that, hide the sprite, then clone it and then when the clone is created, position it and show it. We’re going to put it on the left of the screen. Add this code to the car sprite.
 
-![Step 5 - car sprite](assets/img/step-05-01.png)
+```scratch
+when green flag clicked
+hide
+create clone of (myself v)
+
+when I start as a clone
+go to x: [-240] y: [-110]
+show
+```
 
 </section>
 <section markdown="1">
@@ -107,7 +118,15 @@ To do that, hide the sprite, then clone it and then when the clone is created, p
 
 Next we will make the car move from left to right across the screen. We will use repeat until for this. Once it gets across the screen, we can hide the clone.
 
-![Step 6 - car sprite](assets/img/step-06-01.png)
+```scratch
+when I start as a clone
+go to x: [-240] y: [-110]
+show
+repeat until <(x position) > (240)>
+	change x by (5)
+end
+hide
+```
 
 </section>
 <section markdown="1">
@@ -127,7 +146,14 @@ Next we will make the car move from left to right across the screen. We will use
 
 Instead of just creating one clone, add a forever loop and create a clone every 2 seconds.
 
-![Step 7 - car sprite](assets/img/step-07-01.png)
+```scratch
+when green flag clicked
+hide
+forever
+	create clone of (myself v)
+	wait (2) seconds
+end
+```
 
 </section>
 <section markdown="1">
@@ -143,11 +169,26 @@ Instead of just creating one clone, add a forever loop and create a clone every 
 
 Right now, the cars will just keep driving even if the player is in the way. When the car touches the player, broadcast the message “game over”.
 
-![Step 8 - car sprite](assets/img/step-08-01.png)
+```scratch
+when I start as a clone
+go to x: [-240] y: [-110]
+show
+repeat until <(x position) > (240)>
+	change x by (5)
+	if <touching (player v) ?> then
+		broadcast (game over v)
+	end
+end
+hide
+```
 
 And in the player sprite, when you receive the message, switch the costume and stop the game.
 
-![Step 8 - player sprite](assets/img/step-08-02.png)
+```scratch
+when I receive [game over v]
+switch costume to (chicken-flat v)
+stop [all v]
+```
 
 </section>
 <section markdown="1">
@@ -169,7 +210,17 @@ And in the player sprite, when you receive the message, switch the costume and s
 
 Go to the coin sprite and add this code to create 10 clones at random positions.
 
-![Step 9 - coin sprite](assets/img/step-09-01.png)
+```scratch
+when green flag clicked
+hide
+repeat (10)
+	create clone of (myself v)
+end
+
+when I start as a clone
+go to (random position v)
+show
+```
 
 </section>
 <section markdown="1">
@@ -183,7 +234,16 @@ Go to the coin sprite and add this code to create 10 clones at random positions.
 
 ## 🤑 Step 10: Let the player collect the coins
 
-![Step 10 - coin sprite](assets/img/step-10-01.png)
+```scratch
+when I start as a clone
+go to (random position v)
+show
+forever
+    if <touching (player v)?> then
+        hide
+    end
+end
+```
 
 </section>
 <section markdown="1">
@@ -200,11 +260,22 @@ Go to the coin sprite and add this code to create 10 clones at random positions.
 
 Add this code to the forever loop in the player sprite.
 
-![Step 11 - player sprite](assets/img/step-11-01.png)
+```scratch
+if <(y position) > (160)> then
+    broadcast (you win v)
+end
+```
 
 And add this inside the you-win sprite.
 
-![Step 11 - you-win sprite](assets/img/step-11-02.png)
+```scratch
+when green flag clicked
+hide
+
+when I receive [you win v]
+show
+stop [all v]
+```
 
 </section>
 <section markdown="1">
